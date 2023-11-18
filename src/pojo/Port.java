@@ -1,16 +1,14 @@
 package pojo;
 
 public class Port {
-
     private Integer index;
-    private String name;
+    private String port_name;
     private String container_id;
     private String size;
     private String container_yard;
     private String lading_id;
     private String action;
-
-    private String data;
+    private String date;
 
 
     public Integer getIndex() {
@@ -22,22 +20,33 @@ public class Port {
     }
 
     public String getData() {
-        return data;
+        return date;
     }
 
     public void setData(String data) {
-        this.data = data;
+        this.date = data;
     }
 
     public Port() {
     }
 
+    public Port(Integer index, String port_name, String container_id, String size, String container_yard, String lading_id, String action, String date) {
+        this.index = index;
+        this.port_name = port_name;
+        this.container_id = container_id;
+        this.size = size;
+        this.container_yard = container_yard;
+        this.lading_id = lading_id;
+        this.action = action;
+        this.date = date;
+    }
+
     public String getName() {
-        return name;
+        return port_name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.port_name = name;
     }
 
     public String getContainer_id() {
